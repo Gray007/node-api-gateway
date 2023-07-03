@@ -1,0 +1,8 @@
+###
+Get http://localhost:3030/api/omdb/search?query=Harry%20Potter
+
+###
+Get http://localhost:3030/api/omdb/search?query=
+
+###
+Get http://localhost:3030/api/omdb/search?query=TeST
