@@ -1,7 +1,10 @@
 const express = require('express')
+const cors = require('cors');
 const app = express()
 const omdbRouter = require('./controllers/omdb')
 const config = require('./utils/config')
+
+app.use(cors());
 
 app.use('/api/omdb', omdbRouter)
 
