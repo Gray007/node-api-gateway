@@ -5,7 +5,7 @@ const omdbRouter = require('./controllers/omdb')
 const config = require('./utils/config')
 
 app.use(cors({
-    origin: [config.DOMAIN_WHITELIST],
+    origin: config.DOMAIN_WHITELIST.split(','),
 }))
 
 app.use('/api/omdb', omdbRouter)
